@@ -1,58 +1,47 @@
 @charset "UTF-8";
 
-body{
- color: #00FFFF;
- letter-spacing: 0.2em;
- padding: 2px;
- margin: 10px;
- margin-bottom: 40px;
- background: 　center top/cover no-repeat;
- background:cover; 
-  width:700px
- height：450px
- top ：500px
- left ：880px
- 
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  }
+  
+body {
+    padding-top: 30px; /* ヘッダーの後ろに要素が隠れないようにするため */
 }
 
-#blog-title{
+header {
+  position: top;
+  height: 50vh;
+      padding: 0 0 33.25% 0;
+	margin: 0;
+	width: 100%;
+	height: 0;
+  background: url(profile header neko 1.jpg) center / cover;
+}
 
- width:1174px;
- margin:0 auto;
+.main {
+  background-image: url(profile main megane 1.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  }
+
+.box{
+    padding: 0 0 71.25% 0;
+	margin: 0;
+	width: 100%;
+	height: 0;
+  border: solid red;
+  overflow: hidden;
+  list-style:none;
+  }
+  
+ @media screen and (min-width: 800px) {
+	/* 800px以上に適用されるCSS（タブレット用） */
 }
-#blog-title-inner{
- background-image:IMG_20200404_135215_2.jpg 
- background-size:cover;
+@media screen and (min-width: 1280px) {
+	/* 1280px以上に適用されるCSS（PC用） */
 }
- 
-main {
-	background-color: ;
-	margin: 
-	padding: 10px 0 15px 0;
-	height:420px
-	width: 850px;
-}
- 
-#box1 {
-font-size:35px;
-line-height:5px;
-	width: 800px;
-	height: 0px;
-    padding: 30px;
-    padding-bottom: 40px;
-    margin-bottom: px;
-    margin-left: 180px;
-	float: left;
-}
- 
-#box2 {
-font-size:30px;
-line-height:14px;
-	width: 700px;
-	height: 100px;
-    padding-top: 20px;
-	margin-bottom:px;
-	margin-top: px;
-	margin-right: 40px;
-	float: right;
-}
+
